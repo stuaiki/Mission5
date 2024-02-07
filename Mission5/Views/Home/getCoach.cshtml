@@ -1,13 +1,19 @@
-﻿@{
+﻿<!--This is Coaching Calculator page-->
+@{
     ViewData["Title"] = "Coaching Calculator";
 }
 <h1>@ViewData["Title"]</h1>
+<!-- Short explanation of this page -->
 <p>This is a calculator for you to know how much you will be charges to get a coach for your basketball team.</p>
 
+<!-- Create a form to fill out hours user want me to do, and calculate total charges
+    provide id to all inputs. 
+-->
 <form>
     <lable>Number of hours: </lable>
     <input id="hours"/>
     <br /><br />
+    <!-- This is unediting box -->
     <input type="text" value="$30 per hour" readonly>
     <br /><br />
     <input type="button" value="Calculate Total" id="calcTotal"/>

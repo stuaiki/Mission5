@@ -1,15 +1,18 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--link bootstrap and css to every page-->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Mission 5 Assignment"] - Aiki Takaku Mission 5</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Mission5.styles.css" asp-append-version="true" />
+    <link rel="icon" href="~/global.ico" />
 </head>
 <body>
     <header>
+        <!--This is header part of all pages. Home and Coaching Calculator are nativation button that lead to go to different page.-->
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Find Your Coach</a>
@@ -31,6 +34,7 @@
         </nav>
     </header>
     <div class="container">
+        <!--This is rendering whatever in the cshtml page-->
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
@@ -42,6 +46,7 @@
             Website built by Aiki Takaku
         </div>
     </footer>
+    <!--Apply javascript and bootstrap to every page-->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
